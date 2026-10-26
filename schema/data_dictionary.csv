@@ -1,0 +1,17 @@
+entity,field,type,required,allowed_or_units,validation
+SKU,sku_id,string,yes,SKU-######,unique immutable
+SKU,uom,string,yes,EA,allowed UOM
+SKU,unit_cost,decimal,yes,currency >=0,nonnegative
+Location,location_id,string,yes,LOC-###,unique immutable
+ForecastDemand,demand_id,string,yes,DEM-...,unique
+ForecastDemand,forecast_qty,integer,yes,units >=0,nonnegative
+Inventory,on_hand_qty,integer,yes,units >=0,nonnegative
+Supplier,supplier_id,string,yes,SUP-####,unique immutable
+SupplierCapacity,capacity_qty,integer,yes,units >=0,nonnegative
+LeadTime,lead_time_days,integer,yes,days >=0,nonnegative
+PurchaseOrder,po_id,string,yes,PO-YYYY-######,unique immutable
+PurchaseOrder,status,enum,yes,OPEN/RECEIVED/IN_TRANSIT/CANCELLED,allowed enum
+ProductionPlan,planned_qty,integer,yes,units >=0,nonnegative
+Shortage,shortage_id,string,yes,SHORT-YYYY-######,unique immutable
+Shortage,shortage_qty,integer,yes,units >0,positive
+MitigationOption,mitigation_id,string,yes,MIT-<shortage>-##,unique

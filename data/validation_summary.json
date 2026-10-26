@@ -1,0 +1,144 @@
+{
+  "seed": 20261022,
+  "configuration": {
+    "output": "data",
+    "skus": 100,
+    "locations": 5,
+    "suppliers": 20,
+    "weeks": 12,
+    "inbound_orders": 300
+  },
+  "tables": {
+    "sku": {
+      "rows": 100,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "location": {
+      "rows": 5,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "forecast_demand": {
+      "rows": 6000,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "inventory": {
+      "rows": 500,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "supplier": {
+      "rows": 20,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "supplier_capacity": {
+      "rows": 240,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "lead_time": {
+      "rows": 100,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "purchase_order": {
+      "rows": 300,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "production_plan": {
+      "rows": 6000,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "bom": {
+      "rows": 196,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "substitute": {
+      "rows": 20,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "shortage": {
+      "rows": 5535,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    },
+    "mitigation_option": {
+      "rows": 22140,
+      "null_cells": 0,
+      "duplicate_rows": 0
+    }
+  },
+  "ground_truth_rows": 5,
+  "validation": {
+    "all_primary_key_checks": "PASS",
+    "foreign_key_generation": "PASS",
+    "derived_balance_calculation": "PASS",
+    "ground_truth_separated": "PASS",
+    "fixed_seed": "PASS"
+  },
+  "checksums": {
+    "bom.csv": {
+      "sha256": "675fede66b6d71317b964dc5fba556738093584457d07a5ac9a36b82596af1ef",
+      "bytes": 7305
+    },
+    "forecast_demand.csv": {
+      "sha256": "cbd8be294d4204dcad8855d24a46b4a9c913368ca31a5f84fa0cb1248fe2b31f",
+      "bytes": 386347
+    },
+    "ground_truth.csv": {
+      "sha256": "14815223fdf315848108ad019308f0ca59c2c46bba0bf1db5f42e4d52a70e46e",
+      "bytes": 486
+    },
+    "inventory.csv": {
+      "sha256": "60e2c95e11f3f672bc1651db27e74cbb660bf7fcfbaef0ab538f638bbabf5133",
+      "bytes": 18350
+    },
+    "lead_time.csv": {
+      "sha256": "8d9b3e8debfe893cada35e8e16bf6efa35a4d553e754c704a73d996d709cb3a0",
+      "bytes": 5445
+    },
+    "location.csv": {
+      "sha256": "557be9ce2757a75b71080f2ee9251ed8d5b596d4dd594b2479fac36d7b03e39f",
+      "bytes": 202
+    },
+    "mitigation_option.csv": {
+      "sha256": "22b01e6581d55d8f5101a4b1f6ae5152aaa7c320c8738d2c4d32ad0ad801d0c7",
+      "bytes": 1666140
+    },
+    "production_plan.csv": {
+      "sha256": "89e7343d2d5e19b4fe40d415d7a5e71ecb4c2e86c890e2ddba16bf231f6da608",
+      "bytes": 289188
+    },
+    "purchase_order.csv": {
+      "sha256": "7461cd1badced5acbfa58cb3550492c6576e26514e381940b50015179e978ac0",
+      "bytes": 29317
+    },
+    "shortage.csv": {
+      "sha256": "c4628ed4ed8ea67683f1e91d0fad4e8c07f55a2250edff77b7cb4c9bd7f965f4",
+      "bytes": 425805
+    },
+    "sku.csv": {
+      "sha256": "4ced159396b7059188153b3905d2636a3b225fc9b5b06e288a44ca27252b2fbb",
+      "bytes": 4398
+    },
+    "substitute.csv": {
+      "sha256": "b84ce8e13c2d70526bc9c3524ed5ec65c359d2e24fe97d4b064d110204a1bee2",
+      "bytes": 948
+    },
+    "supplier.csv": {
+      "sha256": "9cd72f18c9b9c073d961a7383581e322d20b7d49ad2c440e7b2cbea803240cfb",
+      "bytes": 789
+    },
+    "supplier_capacity.csv": {
+      "sha256": "37adcd045d1ab934cb7b5a145603df673540e8c0164de2c79b0416e43f0710bd",
+      "bytes": 9875
+    }
+  }
+}
